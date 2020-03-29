@@ -34,7 +34,6 @@ function get() {
                      vars.$L_file.tickets = vars.$L_file.tickets + SD.incident_id + '|' + SD.title + '|' + SD.open + '`';
                      rc = SD.getNext();
                      }
-
 ///////////////////////////////////////////////////////////////////////////// IMs:
              query = fun.strrep(query, 'callback.contact', 'contact.name')             
 
