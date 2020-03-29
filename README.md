@@ -2,11 +2,11 @@
 # NOTES
 
 - Just plug this in like any other unload package - the dbdict .unl first, then the code .unl.
-- Send a *POST* request to the /UserTickets endpoint, with your POST data like this: {"UserTickets":{"User":"<insert username here>"}}
+- Send a *POST* request to the /UserDetails endpoint, with your POST data like this: {"UserDetails":{"User":"<insert username here>"}}
   - You can include include times to search *after*, such as:
-    - {"UserTickets":{"User":"<insert username here>","TimeOpened":"01/01/14 00:00:00"}}
-    - {"UserTickets":{"User":"<insert username here>","TimeUpdated":"01/01/14 00:00:00"}}
-    - {"UserTickets":{"User":"<insert username here>","TimeClosed":"01/01/14 00:00:00"}}
+    - {"UserDetails":{"User":"<insert username here>","TimeOpened":"01/01/14 00:00:00"}}
+    - {"UserDetails":{"User":"<insert username here>","TimeUpdated":"01/01/14 00:00:00"}}
+    - {"UserDetails":{"User":"<insert username here>","TimeClosed":"01/01/14 00:00:00"}}
       - Note that the date/time you send *must* be in this format.
 - You'll get back a JSON response with the tickets in a big long string, which you just need to split on the ` character.
   - You can split the individual fields in a ticket further on the '|' character.
