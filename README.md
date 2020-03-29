@@ -15,7 +15,7 @@
 - You'll ALSO get back a list of employee details for the user you sent in.
 - The devices/CIs and employee details assume that you have certain fields filled in on the device and contacts tables.
   - If you get errors and/or missing data, check the UserDetails ScriptLibrary to make sure you have data in the fields which it is querying.
-- This could easily be expanded upon to add data from other modules or anything else you'd like.
+- This could easily be expanded upon to add data from other modules or anything else.
   - Just edit the UserDetails ScriptLibrary to respond with whatever you'd like!
 
 # EXAMPLES (Python)
