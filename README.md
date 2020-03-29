@@ -19,7 +19,7 @@
   - Just edit the UserDetails ScriptLibrary to respond with whatever you'd like!
 
 # EXAMPLES (Python)
-
+```
 import requests as r, json as j
 endpoint = 'http://<yourHostname>:<yourPort>/SM/9/rest/UserDetails'
 response = r.post(endpoint, auth=('falcon', ''), data='{"UserDetails":{"User":"CAFFREY, AARON"}}')
@@ -48,3 +48,4 @@ print('Employee Manager: ' + contact[5])
 import requests as r, json as j
 endpoint = 'http://<yourHostname>:<yourPort>/SM/9/rest/UserDetails'
 response = r.post(endpoint, auth=('falcon', ''), data='{"UserDetails":{"User":"CAFFREY, AARON","TimeOpened":"01/01/14 00:00:00"}}')
+```
